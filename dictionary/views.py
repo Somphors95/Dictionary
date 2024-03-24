@@ -12,8 +12,8 @@ def word(request):
     # synonym = dictionay.synonym(search)
 
     context = {
-        'meaning': meaning['Noun'][0],
+        'meaning': meaning,
         # 'antonym': antonym,
-        # 'synonym': synonym,
+        # 'synonym': synonym,  
     }
     return render(request, 'word.html', context)
